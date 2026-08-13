@@ -56,11 +56,25 @@ def run(script, description, args=()):
     print("\n" + "-" * 66)
     print(f"  {script}   {description}")
     print("-" * 66)
+    sys.stdout.flush()          # keep our banner ahead of the child's output
+
     if script.endswith(".js"):
         command = ["node", script, *args]
     else:
         command = [sys.executable, script, *args]
-    return subprocess.run(command, cwd=PIPELINE).returncode
+
+    # Capture rather than inherit. Inheriting looks simpler, but when this runs
+    # under CI the child's stderr can end up in a different part of the log from
+    # the banner above it, and a failure reads as though the step produced no
+    # output at all. Capturing and re-printing keeps cause and context together.
+    result = subprocess.run(command, cwd=PIPELINE, text=True,
+                            stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    if result.stdout:
+        print(result.stdout, end="")
+    if result.returncode not in (0, 2, 3):
+        print(f"\n!! {script} exited {result.returncode}")
+    sys.stdout.flush()
+    return result.returncode
 
 
 def sync_monthly_context(period):

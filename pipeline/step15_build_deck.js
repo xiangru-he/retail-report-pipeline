@@ -38,26 +38,6 @@ const WORK = path.join(ROOT, "data", "work");
 
 const DATA = JSON.parse(fs.readFileSync(path.join(WORK, "report_data.json"), "utf8"));
 
-/* Where the commentary comes from, in order of preference:
- *
- *   1. data/work/narrative.json    — this run's output, if step 13 just ran
- *   2. output/<period>/narrative.json — the copy archived with that month's
- *      deck, which IS committed to the repository
- *
- * The second entry is what makes the model-written commentary visible to
- * someone who clones this repo without an API key. It costs one call, once,
- * from whoever generated the month — after that the text is just a file.
- *
- * run_report.py clears (1) at the start of every run, so a narrative left
- * over from a different month can never be picked up here. */
-const NARRATIVE_PATH = [
-  path.join(WORK, "narrative.json"),
-  path.join(OUT_DIR, "narrative.json"),
-].find((p) => fs.existsSync(p));
-
-const HAS_NARRATIVE = Boolean(NARRATIVE_PATH);
-const N = HAS_NARRATIVE ? JSON.parse(fs.readFileSync(NARRATIVE_PATH, "utf8")) : {};
-
 const C = DATA.computed;
 const PERIOD = DATA.period;
 const LABEL = DATA.period_label;
@@ -65,6 +45,31 @@ const LABEL = DATA.period_label;
 const OUT_DIR = path.join(ROOT, "output", PERIOD);
 fs.mkdirSync(OUT_DIR, { recursive: true });
 const OUT_FILE = path.join(OUT_DIR, `monthly_report_${PERIOD}.pptx`);
+
+/* Where the commentary comes from, in order of preference:
+ *
+ *   1. data/work/narrative.json      — this run's output, if step 13 just ran
+ *   2. output/<period>/narrative.json — the copy archived with that month's
+ *      deck, which IS committed to the repository
+ *
+ * The second entry is what makes the model-written commentary visible to
+ * someone who clones this repo without an API key. It costs one call, once,
+ * from whoever generated the month — after that the text is just a file.
+ *
+ * run_report.py clears (1) at the start of every run, so a narrative left over
+ * from a different month can never be picked up here.
+ *
+ * This block has to sit below OUT_DIR. It didn't at first, and `const` in the
+ * temporal dead zone throws rather than reading as undefined — the whole file
+ * failed to load. Locally the deck had been built before that edit, so nothing
+ * caught it until CI ran the file from scratch. */
+const NARRATIVE_PATH = [
+  path.join(WORK, "narrative.json"),
+  path.join(OUT_DIR, "narrative.json"),
+].find((p) => fs.existsSync(p));
+
+const HAS_NARRATIVE = Boolean(NARRATIVE_PATH);
+const N = HAS_NARRATIVE ? JSON.parse(fs.readFileSync(NARRATIVE_PATH, "utf8")) : {};
 
 /* ------------------------------------------------------------------ theme */
 const BG = "0B0F1F";
