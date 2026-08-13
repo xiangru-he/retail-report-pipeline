@@ -1,0 +1,116 @@
+# Runs the whole thing on a clean machine, every push.
+#
+# Not just the unit tests — this spins up MySQL, imports all four months,
+# and builds four decks. The decks are uploaded as artefacts, so you can
+# download them from the Actions tab and open them.
+#
+# The April step is the interesting one. It exits 2 because a new brand turns
+# up that month and nobody has said what category it belongs to. The workflow
+# answers the question the way the store manager would, then resumes. That
+# checkpoint firing in a CI log is a better description of the design than
+# anything in the README.
+
+name: pipeline
+
+on: [push, pull_request]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: pytest
+
+  full-run:
+    runs-on: ubuntu-latest
+
+    services:
+      mysql:
+        image: mysql:8
+        env:
+          MYSQL_ROOT_PASSWORD: ci-not-a-real-password
+          MYSQL_DATABASE: retail_demo
+        ports: ["3306:3306"]
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1"
+          --health-interval=10s --health-timeout=5s --health-retries=10
+
+    env:
+      MYSQL_HOST: 127.0.0.1
+      MYSQL_PORT: "3306"
+      MYSQL_USER: root
+      MYSQL_PASSWORD: ci-not-a-real-password
+      MYSQL_DATABASE: retail_demo
+      STORE_CODE: DEMO-CENTRAL
+      # No ANTHROPIC_API_KEY here on purpose. Step 13 is skipped, and step 15
+      # picks up the narrative.json committed under output/<period>/ — which is
+      # the same path a reviewer cloning this repo takes.
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm install
+
+      - name: Create the schema
+        run: mysql -h 127.0.0.1 -u root -p"$MYSQL_PASSWORD" retail_demo < sql/schema.sql
+
+      - name: Import January to March
+        run: |
+          python monthly.py 2026-01
+          python monthly.py 2026-02
+          python monthly.py 2026-03
+
+      - name: April should stop and ask about the new brand
+        run: |
+          set +e
+          python monthly.py 2026-04
+          code=$?
+          set -e
+          if [ "$code" -ne 2 ]; then
+            echo "Expected exit 2 (a person is needed), got $code"
+            exit 1
+          fi
+          echo "Stopped as designed."
+
+      - name: Answer it the way the manager would, then resume
+        run: |
+          python - <<'PY'
+          import pandas as pd
+          path = "data/reference/brand_categories.csv"
+          df = pd.read_csv(path)
+          blank = df["confirmed_category"].astype(str).str.strip().isin(["", "nan"])
+          print("answering:", df.loc[blank, "brand_variants"].tolist())
+          df.loc[blank, "confirmed_category"] = "honey"
+          df.to_csv(path, index=False)
+          PY
+          python monthly.py 2026-04 --resume
+
+      - name: Check every month produced a deck
+        run: |
+          for m in 2026-01 2026-02 2026-03 2026-04; do
+            f="output/$m/monthly_report_$m.pptx"
+            [ -s "$f" ] || { echo "missing or empty: $f"; exit 1; }
+            echo "$(du -h "$f" | cut -f1)  $f"
+          done
+
+      - name: Run the standalone analysis queries
+        run: mysql -h 127.0.0.1 -u root -p"$MYSQL_PASSWORD" retail_demo < sql/analysis_queries.sql
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: monthly-decks
+          path: output/*/monthly_report_*.pptx
