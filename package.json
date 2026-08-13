@@ -1,0 +1,13 @@
+{
+  "name": "retail-report-pipeline",
+  "version": "1.0.0",
+  "description": "Deck assembly for the monthly retail report. The rest of the pipeline is Python; this step is JS because pptxgenjs takes the layout in about a third of the lines python-pptx would.",
+  "private": true,
+  "scripts": {
+    "build-deck": "node pipeline/step15_build_deck.js"
+  },
+  "dependencies": {
+    "pptxgenjs": "^3.12.0"
+  },
+  "license": "MIT"
+}

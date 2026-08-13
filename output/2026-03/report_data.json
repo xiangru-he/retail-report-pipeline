@@ -1,0 +1,810 @@
+{
+  "period": "2026-03",
+  "period_label": "Mar 2026",
+  "store_code": "DEMO-CENTRAL",
+  "trend_months": 4,
+  "headline": {
+    "total_amount": 79200.04,
+    "total_qty": 2467.0,
+    "total_orders": 433.0,
+    "avg_order_value": 182.91,
+    "tiers": [
+      {
+        "bucket": "premium",
+        "amount": 33578.71,
+        "pct_of_total": 42.4
+      },
+      {
+        "bucket": "regular",
+        "amount": 23310.87,
+        "pct_of_total": 29.43
+      },
+      {
+        "bucket": "milk_powder",
+        "amount": 22310.46,
+        "pct_of_total": 28.17
+      }
+    ]
+  },
+  "monthly_trend": [
+    {
+      "period": "2026-01",
+      "bucket": "milk_powder",
+      "amount": 24080.73,
+      "qty": 383.0,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-01",
+      "bucket": "premium",
+      "amount": 39734.32,
+      "qty": 1191.0,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-01",
+      "bucket": "regular",
+      "amount": 24684.99,
+      "qty": 797.0,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-02",
+      "bucket": "milk_powder",
+      "amount": 13238.72,
+      "qty": 224.0,
+      "period_label": "Feb 2026"
+    },
+    {
+      "period": "2026-02",
+      "bucket": "premium",
+      "amount": 20903.82,
+      "qty": 901.0,
+      "period_label": "Feb 2026"
+    },
+    {
+      "period": "2026-02",
+      "bucket": "regular",
+      "amount": 16757.54,
+      "qty": 630.0,
+      "period_label": "Feb 2026"
+    },
+    {
+      "period": "2026-03",
+      "bucket": "milk_powder",
+      "amount": 22310.46,
+      "qty": 419.0,
+      "period_label": "Mar 2026"
+    },
+    {
+      "period": "2026-03",
+      "bucket": "premium",
+      "amount": 33578.71,
+      "qty": 1238.0,
+      "period_label": "Mar 2026"
+    },
+    {
+      "period": "2026-03",
+      "bucket": "regular",
+      "amount": 23310.87,
+      "qty": 810.0,
+      "period_label": "Mar 2026"
+    }
+  ],
+  "category_mix": {
+    "total_amount": 79200.04,
+    "total_qty": 2467.0,
+    "categories": [
+      {
+        "category": "supplement",
+        "amount": 24609.76,
+        "qty": 798.0,
+        "amount_pct": 31.1,
+        "qty_pct": 32.3
+      },
+      {
+        "category": "milk_powder",
+        "amount": 22310.46,
+        "qty": 419.0,
+        "amount_pct": 28.2,
+        "qty_pct": 17.0
+      },
+      {
+        "category": "souvenir",
+        "amount": 13378.82,
+        "qty": 608.0,
+        "amount_pct": 16.9,
+        "qty_pct": 24.6
+      },
+      {
+        "category": "honey",
+        "amount": 12447.37,
+        "qty": 212.0,
+        "amount_pct": 15.7,
+        "qty_pct": 8.6
+      },
+      {
+        "category": "skincare",
+        "amount": 5317.45,
+        "qty": 306.0,
+        "amount_pct": 6.7,
+        "qty_pct": 12.4
+      },
+      {
+        "category": "chocolate",
+        "amount": 1136.18,
+        "qty": 124.0,
+        "amount_pct": 1.4,
+        "qty_pct": 5.0
+      }
+    ]
+  },
+  "top_products": [
+    {
+      "sku_code": "SKU1305",
+      "brand": "KIWIANA CO",
+      "product_desc": "Sheepskin Slippers",
+      "category": "souvenir",
+      "tier": "premium",
+      "qty": 34.0,
+      "amount": 141.78,
+      "rank": 1
+    },
+    {
+      "sku_code": "SKU1175",
+      "brand": "Westbrook",
+      "product_desc": "Skim Milk Powder (800g)",
+      "category": "milk_powder",
+      "tier": "regular",
+      "qty": 34.0,
+      "amount": 878.08,
+      "rank": 2
+    },
+    {
+      "sku_code": "SKU1098",
+      "brand": "Aroha Nutrition",
+      "product_desc": "Joint Care Glucosamine 90s",
+      "category": "supplement",
+      "tier": "regular",
+      "qty": 34.0,
+      "amount": 1502.86,
+      "rank": 3
+    },
+    {
+      "sku_code": "SKU1255",
+      "brand": "Cove & Clay",
+      "product_desc": "Sheep Placenta Cream (100ml)",
+      "category": "skincare",
+      "tier": "regular",
+      "qty": 33.0,
+      "amount": 999.4,
+      "rank": 4
+    },
+    {
+      "sku_code": "SKU1309",
+      "brand": "Harbour Wool",
+      "product_desc": "Souvenir Keyring",
+      "category": "souvenir",
+      "tier": "premium",
+      "qty": 33.0,
+      "amount": 196.74,
+      "rank": 5
+    },
+    {
+      "sku_code": "SKU1315",
+      "brand": "Harbour Wool",
+      "product_desc": "Souvenir Keyring",
+      "category": "souvenir",
+      "tier": "premium",
+      "qty": 32.0,
+      "amount": 654.86,
+      "rank": 6
+    },
+    {
+      "sku_code": "SKU1033",
+      "brand": "Northlight",
+      "product_desc": "Magnesium Complex 90s",
+      "category": "supplement",
+      "tier": "premium",
+      "qty": 32.0,
+      "amount": 1252.55,
+      "rank": 7
+    },
+    {
+      "sku_code": "SKU1195",
+      "brand": "Golden Vale",
+      "product_desc": "Manuka Honey UMF 15+ (250g)",
+      "category": "honey",
+      "tier": "premium",
+      "qty": 31.0,
+      "amount": 1557.03,
+      "rank": 8
+    },
+    {
+      "sku_code": "SKU1325",
+      "brand": "Piko Gifts",
+      "product_desc": "Sheepskin Slippers",
+      "category": "souvenir",
+      "tier": "premium",
+      "qty": 31.0,
+      "amount": 1130.47,
+      "rank": 9
+    },
+    {
+      "sku_code": "SKU1094",
+      "brand": "Aroha Nutrition",
+      "product_desc": "CoQ10 150mg",
+      "category": "supplement",
+      "tier": "regular",
+      "qty": 30.0,
+      "amount": 1054.75,
+      "rank": 10
+    }
+  ],
+  "premium_in_top10": 6,
+  "premium_mix": {
+    "total_amount": 35254.55,
+    "total_qty": 1263.0,
+    "categories": [
+      {
+        "category": "souvenir",
+        "amount": 13378.82,
+        "qty": 608.0,
+        "amount_pct": 37.9,
+        "qty_pct": 48.1
+      },
+      {
+        "category": "honey",
+        "amount": 10565.5,
+        "qty": 181.0,
+        "amount_pct": 30.0,
+        "qty_pct": 14.3
+      },
+      {
+        "category": "supplement",
+        "amount": 6327.39,
+        "qty": 219.0,
+        "amount_pct": 17.9,
+        "qty_pct": 17.3
+      },
+      {
+        "category": "skincare",
+        "amount": 2874.59,
+        "qty": 169.0,
+        "amount_pct": 8.2,
+        "qty_pct": 13.4
+      },
+      {
+        "category": "milk_powder",
+        "amount": 1675.84,
+        "qty": 25.0,
+        "amount_pct": 4.8,
+        "qty_pct": 2.0
+      },
+      {
+        "category": "chocolate",
+        "amount": 432.41,
+        "qty": 61.0,
+        "amount_pct": 1.2,
+        "qty_pct": 4.8
+      }
+    ]
+  },
+  "structure_intro": {
+    "premium_amount": 35254.55,
+    "premium_pct_of_store": 44.5,
+    "leading_premium_category": "souvenir",
+    "leading_premium_pct": 37.9,
+    "premium_in_top10": 6,
+    "top_n": 10
+  },
+  "top_brands": [
+    {
+      "brand": "Ambervale",
+      "amount": 6533.79,
+      "pct_of_store": 8.2,
+      "main_category": "milk_powder"
+    },
+    {
+      "brand": "Clearfield",
+      "amount": 5503.38,
+      "pct_of_store": 6.9,
+      "main_category": "milk_powder"
+    },
+    {
+      "brand": "Manuka Ridge",
+      "amount": 4395.82,
+      "pct_of_store": 5.6,
+      "main_category": "honey"
+    },
+    {
+      "brand": "Golden Vale",
+      "amount": 4222.46,
+      "pct_of_store": 5.3,
+      "main_category": "honey"
+    },
+    {
+      "brand": "Piko Gifts",
+      "amount": 4190.62,
+      "pct_of_store": 5.3,
+      "main_category": "souvenir"
+    }
+  ],
+  "milk_powder_brands": [
+    {
+      "brand": "Ambervale",
+      "amount": 6533.79,
+      "pct_of_category": 29.3
+    },
+    {
+      "brand": "Clearfield",
+      "amount": 5503.38,
+      "pct_of_category": 24.7
+    },
+    {
+      "brand": "Highmoor",
+      "amount": 3474.17,
+      "pct_of_category": 15.6
+    },
+    {
+      "brand": "Westbrook",
+      "amount": 2613.81,
+      "pct_of_category": 11.7
+    },
+    {
+      "brand": "Two Rivers",
+      "amount": 2208.61,
+      "pct_of_category": 9.9
+    },
+    {
+      "brand": "Fernvale",
+      "amount": 1976.7,
+      "pct_of_category": 8.9
+    }
+  ],
+  "functional_trend": [
+    {
+      "period": "2026-01",
+      "product_type": "calcium",
+      "qty": 72.0,
+      "amount": 2418.5,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-02",
+      "product_type": "calcium",
+      "qty": 54.0,
+      "amount": 1211.56,
+      "period_label": "Feb 2026"
+    },
+    {
+      "period": "2026-03",
+      "product_type": "calcium",
+      "qty": 86.0,
+      "amount": 2543.9,
+      "period_label": "Mar 2026"
+    },
+    {
+      "period": "2026-01",
+      "product_type": "coq10",
+      "qty": 64.0,
+      "amount": 2183.12,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-02",
+      "product_type": "coq10",
+      "qty": 89.0,
+      "amount": 2446.27,
+      "period_label": "Feb 2026"
+    },
+    {
+      "period": "2026-03",
+      "product_type": "coq10",
+      "qty": 61.0,
+      "amount": 2345.21,
+      "period_label": "Mar 2026"
+    },
+    {
+      "period": "2026-01",
+      "product_type": "eye_care",
+      "qty": 38.0,
+      "amount": 1157.46,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-02",
+      "product_type": "eye_care",
+      "qty": 35.0,
+      "amount": 969.16,
+      "period_label": "Feb 2026"
+    },
+    {
+      "period": "2026-03",
+      "product_type": "eye_care",
+      "qty": 50.0,
+      "amount": 1582.35,
+      "period_label": "Mar 2026"
+    },
+    {
+      "period": "2026-01",
+      "product_type": "fish_oil",
+      "qty": 126.0,
+      "amount": 4194.93,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-02",
+      "product_type": "fish_oil",
+      "qty": 113.0,
+      "amount": 3382.65,
+      "period_label": "Feb 2026"
+    },
+    {
+      "period": "2026-03",
+      "product_type": "fish_oil",
+      "qty": 136.0,
+      "amount": 4270.25,
+      "period_label": "Mar 2026"
+    },
+    {
+      "period": "2026-01",
+      "product_type": "joint_care",
+      "qty": 100.0,
+      "amount": 3725.81,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-02",
+      "product_type": "joint_care",
+      "qty": 42.0,
+      "amount": 1099.82,
+      "period_label": "Feb 2026"
+    },
+    {
+      "period": "2026-03",
+      "product_type": "joint_care",
+      "qty": 47.0,
+      "amount": 1820.27,
+      "period_label": "Mar 2026"
+    },
+    {
+      "period": "2026-01",
+      "product_type": "lecithin",
+      "qty": 57.0,
+      "amount": 2214.55,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-02",
+      "product_type": "lecithin",
+      "qty": 28.0,
+      "amount": 629.43,
+      "period_label": "Feb 2026"
+    },
+    {
+      "period": "2026-03",
+      "product_type": "lecithin",
+      "qty": 99.0,
+      "amount": 2713.44,
+      "period_label": "Mar 2026"
+    },
+    {
+      "period": "2026-01",
+      "product_type": "liver_support",
+      "qty": 82.0,
+      "amount": 2975.65,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-02",
+      "product_type": "liver_support",
+      "qty": 39.0,
+      "amount": 1427.34,
+      "period_label": "Feb 2026"
+    },
+    {
+      "period": "2026-03",
+      "product_type": "liver_support",
+      "qty": 35.0,
+      "amount": 862.89,
+      "period_label": "Mar 2026"
+    },
+    {
+      "period": "2026-01",
+      "product_type": "magnesium",
+      "qty": 38.0,
+      "amount": 1470.08,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-02",
+      "product_type": "magnesium",
+      "qty": 74.0,
+      "amount": 2044.54,
+      "period_label": "Feb 2026"
+    },
+    {
+      "period": "2026-03",
+      "product_type": "magnesium",
+      "qty": 65.0,
+      "amount": 2277.84,
+      "period_label": "Mar 2026"
+    },
+    {
+      "period": "2026-01",
+      "product_type": "multivitamin",
+      "qty": 66.0,
+      "amount": 1824.59,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-02",
+      "product_type": "multivitamin",
+      "qty": 38.0,
+      "amount": 824.96,
+      "period_label": "Feb 2026"
+    },
+    {
+      "period": "2026-03",
+      "product_type": "multivitamin",
+      "qty": 55.0,
+      "amount": 1444.53,
+      "period_label": "Mar 2026"
+    },
+    {
+      "period": "2026-01",
+      "product_type": "probiotic",
+      "qty": 61.0,
+      "amount": 2012.02,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-02",
+      "product_type": "probiotic",
+      "qty": 50.0,
+      "amount": 1051.38,
+      "period_label": "Feb 2026"
+    },
+    {
+      "period": "2026-03",
+      "product_type": "probiotic",
+      "qty": 135.0,
+      "amount": 3733.39,
+      "period_label": "Mar 2026"
+    },
+    {
+      "period": "2026-01",
+      "product_type": "propolis",
+      "qty": 50.0,
+      "amount": 1872.6,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-02",
+      "product_type": "propolis",
+      "qty": 45.0,
+      "amount": 1252.73,
+      "period_label": "Feb 2026"
+    },
+    {
+      "period": "2026-03",
+      "product_type": "propolis",
+      "qty": 16.0,
+      "amount": 465.89,
+      "period_label": "Mar 2026"
+    }
+  ],
+  "pickup_tier_trend": [
+    {
+      "period": "2026-01",
+      "tier": "premium",
+      "amount": 2051.28,
+      "qty": 35.0,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-01",
+      "tier": "regular",
+      "amount": 9737.1,
+      "qty": 161.0,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-02",
+      "tier": "premium",
+      "amount": 1781.35,
+      "qty": 33.0,
+      "period_label": "Feb 2026"
+    },
+    {
+      "period": "2026-02",
+      "tier": "regular",
+      "amount": 7153.6,
+      "qty": 119.0,
+      "period_label": "Feb 2026"
+    },
+    {
+      "period": "2026-03",
+      "tier": "premium",
+      "amount": 1675.84,
+      "qty": 25.0,
+      "period_label": "Mar 2026"
+    },
+    {
+      "period": "2026-03",
+      "tier": "regular",
+      "amount": 10231.29,
+      "qty": 213.0,
+      "period_label": "Mar 2026"
+    }
+  ],
+  "channel_trend": [
+    {
+      "period": "2026-01",
+      "channel_group": "local",
+      "qty": 1100.0,
+      "amount": 34990.18,
+      "qty_pct": 46.5,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-01",
+      "channel_group": "export",
+      "qty": 1265.0,
+      "amount": 54322.26,
+      "qty_pct": 53.5,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-02",
+      "channel_group": "local",
+      "qty": 1000.0,
+      "amount": 25573.99,
+      "qty_pct": 56.9,
+      "period_label": "Feb 2026"
+    },
+    {
+      "period": "2026-02",
+      "channel_group": "export",
+      "qty": 759.0,
+      "amount": 26204.38,
+      "qty_pct": 43.1,
+      "period_label": "Feb 2026"
+    },
+    {
+      "period": "2026-03",
+      "channel_group": "local",
+      "qty": 1240.0,
+      "amount": 34045.18,
+      "qty_pct": 50.2,
+      "period_label": "Mar 2026"
+    },
+    {
+      "period": "2026-03",
+      "channel_group": "export",
+      "qty": 1230.0,
+      "amount": 45590.34,
+      "qty_pct": 49.8,
+      "period_label": "Mar 2026"
+    }
+  ],
+  "sku_pareto": [
+    {
+      "decile": 1,
+      "decile_amount": 25807.52,
+      "cumulative_pct": 32.6
+    },
+    {
+      "decile": 2,
+      "decile_amount": 14396.96,
+      "cumulative_pct": 50.8
+    },
+    {
+      "decile": 3,
+      "decile_amount": 10610.53,
+      "cumulative_pct": 64.2
+    },
+    {
+      "decile": 4,
+      "decile_amount": 8410.38,
+      "cumulative_pct": 74.8
+    },
+    {
+      "decile": 5,
+      "decile_amount": 6326.46,
+      "cumulative_pct": 82.8
+    },
+    {
+      "decile": 6,
+      "decile_amount": 4721.01,
+      "cumulative_pct": 88.7
+    },
+    {
+      "decile": 7,
+      "decile_amount": 3593.4,
+      "cumulative_pct": 93.3
+    },
+    {
+      "decile": 8,
+      "decile_amount": 2570.54,
+      "cumulative_pct": 96.5
+    },
+    {
+      "decile": 9,
+      "decile_amount": 1820.72,
+      "cumulative_pct": 98.8
+    },
+    {
+      "decile": 10,
+      "decile_amount": 942.52,
+      "cumulative_pct": 100.0
+    }
+  ],
+  "operating_context": {
+    "foot_traffic": 231,
+    "miniprogram_leads": 88,
+    "miniprogram_completion_rate": 59.0,
+    "study_tour_flag": "no",
+    "study_tour_note": null,
+    "activity_description": "Premium supplements 3 for 10% off, buy 5 get 1 free, free shipping"
+  },
+  "computed": {
+    "trend_periods": [
+      "2026-01",
+      "2026-02",
+      "2026-03"
+    ],
+    "trend_labels": [
+      "Jan 2026",
+      "Feb 2026",
+      "Mar 2026"
+    ],
+    "amount_totals": [
+      88500.04,
+      50900.08,
+      79200.04
+    ],
+    "amount_mom_pct": [
+      -42.49,
+      55.6
+    ],
+    "qty_totals": [
+      2371.0,
+      1755.0,
+      2467.0
+    ],
+    "qty_mom_pct": [
+      -25.98,
+      40.57
+    ],
+    "channel_periods": [
+      "2026-01",
+      "2026-02",
+      "2026-03"
+    ],
+    "channel_labels": [
+      "Jan 2026",
+      "Feb 2026",
+      "Mar 2026"
+    ],
+    "local_qty": [
+      1100.0,
+      1000.0,
+      1240.0
+    ],
+    "local_qty_mom_pct": [
+      -9.09,
+      24.0
+    ],
+    "export_qty": [
+      1265.0,
+      759.0,
+      1230.0
+    ],
+    "export_qty_mom_pct": [
+      -40.0,
+      62.06
+    ]
+  }
+}

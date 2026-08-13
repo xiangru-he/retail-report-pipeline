@@ -1,0 +1,125 @@
+{
+  "_note": "Public holidays for the months the report covers. Used only to judge whether a movement looks seasonal — the wording rules require hedged language, never a stated cause. CN = mainland China (matters because cross-border freight stops), NZ = New Zealand (affects walk-in trade).",
+  "2026-01": [
+    {
+      "date": "2026-01-01",
+      "end": "2026-01-03",
+      "region": "CN",
+      "name": "New Year",
+      "impact": "Domestic couriers pause briefly; cross-border largely unaffected"
+    },
+    {
+      "date": "2026-01-01",
+      "end": "2026-01-02",
+      "region": "NZ",
+      "name": "New Year's Day and day after",
+      "impact": "Walk-in trade quiet over the holiday period"
+    }
+  ],
+  "2026-02": [
+    {
+      "date": "2026-02-06",
+      "region": "NZ",
+      "name": "Waitangi Day",
+      "impact": "Long weekend; some effect on walk-in trade"
+    },
+    {
+      "date": "2026-02-15",
+      "end": "2026-02-23",
+      "region": "CN",
+      "name": "Chinese New Year (9-day holiday, New Year's Day 17 Feb)",
+      "impact": "Cross-border collection, customs clearance and freight are suspended or delayed for roughly two weeks either side. This is the most common reason February export volume falls away."
+    }
+  ],
+  "2026-03": [],
+  "2026-04": [
+    {
+      "date": "2026-04-03",
+      "end": "2026-04-06",
+      "region": "NZ",
+      "name": "Easter",
+      "impact": "Four-day weekend; a traditional retail peak in New Zealand"
+    },
+    {
+      "date": "2026-04-04",
+      "end": "2026-04-06",
+      "region": "CN",
+      "name": "Qingming Festival",
+      "impact": "Short freight pause"
+    },
+    {
+      "date": "2026-04-25",
+      "end": "2026-04-27",
+      "region": "NZ",
+      "name": "Anzac Day (observed 27 Apr)",
+      "impact": "Trading restrictions until 1pm"
+    }
+  ],
+  "2026-05": [
+    {
+      "date": "2026-05-01",
+      "end": "2026-05-05",
+      "region": "CN",
+      "name": "Labour Day",
+      "impact": "5-day holiday; freight pause, and a domestic shopping peak in China"
+    }
+  ],
+  "2026-06": [
+    {
+      "date": "2026-06-01",
+      "region": "NZ",
+      "name": "King's Birthday",
+      "impact": "Long weekend"
+    },
+    {
+      "date": "2026-06-19",
+      "end": "2026-06-21",
+      "region": "CN",
+      "name": "Dragon Boat Festival",
+      "impact": "Short freight pause"
+    }
+  ],
+  "2026-07": [
+    {
+      "date": "2026-07-10",
+      "region": "NZ",
+      "name": "Matariki",
+      "impact": "Public holiday; winter is the quiet season"
+    }
+  ],
+  "2026-08": [],
+  "2026-09": [
+    {
+      "date": "2026-09-25",
+      "end": "2026-09-27",
+      "region": "CN",
+      "name": "Mid-Autumn Festival",
+      "impact": "Gifting peak for honey and supplements in the weeks before"
+    }
+  ],
+  "2026-10": [
+    {
+      "date": "2026-10-01",
+      "end": "2026-10-07",
+      "region": "CN",
+      "name": "National Day",
+      "impact": "7-day holiday; extended freight pause and a domestic shopping peak"
+    },
+    {
+      "date": "2026-10-26",
+      "region": "NZ",
+      "name": "Labour Day",
+      "impact": "Long weekend"
+    }
+  ],
+  "2026-11": [],
+  "2026-12": [
+    {
+      "date": "2026-12-25",
+      "end": "2026-12-28",
+      "region": "NZ",
+      "name": "Christmas and Boxing Day (observed 28 Dec)",
+      "impact": "Peak retail season in New Zealand"
+    }
+  ]
+}

@@ -1,0 +1,526 @@
+{
+  "period": "2026-01",
+  "period_label": "Jan 2026",
+  "store_code": "DEMO-CENTRAL",
+  "trend_months": 4,
+  "headline": {
+    "total_amount": 88500.04,
+    "total_qty": 2371.0,
+    "total_orders": 521.0,
+    "avg_order_value": 169.87,
+    "tiers": [
+      {
+        "bucket": "premium",
+        "amount": 39734.32,
+        "pct_of_total": 44.9
+      },
+      {
+        "bucket": "regular",
+        "amount": 24684.99,
+        "pct_of_total": 27.89
+      },
+      {
+        "bucket": "milk_powder",
+        "amount": 24080.73,
+        "pct_of_total": 27.21
+      }
+    ]
+  },
+  "monthly_trend": [
+    {
+      "period": "2026-01",
+      "bucket": "milk_powder",
+      "amount": 24080.73,
+      "qty": 383.0,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-01",
+      "bucket": "premium",
+      "amount": 39734.32,
+      "qty": 1191.0,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-01",
+      "bucket": "regular",
+      "amount": 24684.99,
+      "qty": 797.0,
+      "period_label": "Jan 2026"
+    }
+  ],
+  "category_mix": {
+    "total_amount": 88500.04,
+    "total_qty": 2371.0,
+    "categories": [
+      {
+        "category": "supplement",
+        "amount": 26617.8,
+        "qty": 772.0,
+        "amount_pct": 30.1,
+        "qty_pct": 32.6
+      },
+      {
+        "category": "milk_powder",
+        "amount": 24080.73,
+        "qty": 383.0,
+        "amount_pct": 27.2,
+        "qty_pct": 16.2
+      },
+      {
+        "category": "honey",
+        "amount": 16477.09,
+        "qty": 251.0,
+        "amount_pct": 18.6,
+        "qty_pct": 10.6
+      },
+      {
+        "category": "souvenir",
+        "amount": 12469.74,
+        "qty": 452.0,
+        "amount_pct": 14.1,
+        "qty_pct": 19.1
+      },
+      {
+        "category": "skincare",
+        "amount": 6944.85,
+        "qty": 330.0,
+        "amount_pct": 7.8,
+        "qty_pct": 13.9
+      },
+      {
+        "category": "chocolate",
+        "amount": 1909.83,
+        "qty": 183.0,
+        "amount_pct": 2.2,
+        "qty_pct": 7.7
+      }
+    ]
+  },
+  "top_products": [
+    {
+      "sku_code": "SKU1122",
+      "brand": "Halcyon",
+      "product_desc": "Joint Care Glucosamine 180s",
+      "category": "supplement",
+      "tier": "regular",
+      "qty": 19.0,
+      "amount": 577.78,
+      "rank": 1
+    },
+    {
+      "sku_code": "SKU1284",
+      "brand": "Southern Craft",
+      "product_desc": "Plush Kiwi Toy (15cm)",
+      "category": "souvenir",
+      "tier": "premium",
+      "qty": 18.0,
+      "amount": 389.35,
+      "rank": 2
+    },
+    {
+      "sku_code": "SKU1136",
+      "brand": "Clearfield",
+      "product_desc": "Goat Milk Powder (800g)",
+      "category": "milk_powder",
+      "tier": "regular",
+      "qty": 18.0,
+      "amount": 1333.56,
+      "rank": 3
+    },
+    {
+      "sku_code": "SKU1067",
+      "brand": "Baycrest",
+      "product_desc": "Omega 3 Fish Oil 1500mg",
+      "category": "supplement",
+      "tier": "regular",
+      "qty": 18.0,
+      "amount": 275.69,
+      "rank": 4
+    },
+    {
+      "sku_code": "SKU1247",
+      "brand": "Silverfern",
+      "product_desc": "Lanolin Moisturising Cream (100ml)",
+      "category": "skincare",
+      "tier": "regular",
+      "qty": 18.0,
+      "amount": 390.2,
+      "rank": 5
+    },
+    {
+      "sku_code": "SKU1221",
+      "brand": "Lanolux",
+      "product_desc": "Propolis Toothpaste (100g)",
+      "category": "skincare",
+      "tier": "premium",
+      "qty": 17.0,
+      "amount": 146.62,
+      "rank": 6
+    },
+    {
+      "sku_code": "SKU1241",
+      "brand": "Silverfern",
+      "product_desc": "Lanolin Moisturising Cream (150ml)",
+      "category": "skincare",
+      "tier": "regular",
+      "qty": 16.0,
+      "amount": 182.75,
+      "rank": 7
+    },
+    {
+      "sku_code": "SKU1338",
+      "brand": "Cocoa Bay",
+      "product_desc": "Dark Chocolate Block 85% (180g)",
+      "category": "chocolate",
+      "tier": "premium",
+      "qty": 16.0,
+      "amount": 192.5,
+      "rank": 8
+    },
+    {
+      "sku_code": "SKU1151",
+      "brand": "Two Rivers",
+      "product_desc": "Whole Milk Powder (800g)",
+      "category": "milk_powder",
+      "tier": "regular",
+      "qty": 16.0,
+      "amount": 562.76,
+      "rank": 9
+    },
+    {
+      "sku_code": "SKU1351",
+      "brand": "Rata Confection",
+      "product_desc": "Dark Chocolate Block 85% (180g)",
+      "category": "chocolate",
+      "tier": "regular",
+      "qty": 16.0,
+      "amount": 198.22,
+      "rank": 10
+    }
+  ],
+  "premium_in_top10": 3,
+  "premium_mix": {
+    "total_amount": 41785.6,
+    "total_qty": 1226.0,
+    "categories": [
+      {
+        "category": "honey",
+        "amount": 13179.34,
+        "qty": 198.0,
+        "amount_pct": 31.5,
+        "qty_pct": 16.2
+      },
+      {
+        "category": "souvenir",
+        "amount": 12469.74,
+        "qty": 452.0,
+        "amount_pct": 29.8,
+        "qty_pct": 36.9
+      },
+      {
+        "category": "supplement",
+        "amount": 9250.58,
+        "qty": 263.0,
+        "amount_pct": 22.1,
+        "qty_pct": 21.5
+      },
+      {
+        "category": "skincare",
+        "amount": 3888.14,
+        "qty": 183.0,
+        "amount_pct": 9.3,
+        "qty_pct": 14.9
+      },
+      {
+        "category": "milk_powder",
+        "amount": 2051.28,
+        "qty": 35.0,
+        "amount_pct": 4.9,
+        "qty_pct": 2.9
+      },
+      {
+        "category": "chocolate",
+        "amount": 946.52,
+        "qty": 95.0,
+        "amount_pct": 2.3,
+        "qty_pct": 7.7
+      }
+    ]
+  },
+  "structure_intro": {
+    "premium_amount": 41785.6,
+    "premium_pct_of_store": 47.2,
+    "leading_premium_category": "honey",
+    "leading_premium_pct": 31.5,
+    "premium_in_top10": 3,
+    "top_n": 10
+  },
+  "top_brands": [
+    {
+      "brand": "Clearfield",
+      "amount": 7710.57,
+      "pct_of_store": 8.7,
+      "main_category": "milk_powder"
+    },
+    {
+      "brand": "Manuka Ridge",
+      "amount": 5744.04,
+      "pct_of_store": 6.5,
+      "main_category": "honey"
+    },
+    {
+      "brand": "SOLWAVE",
+      "amount": 5389.29,
+      "pct_of_store": 6.1,
+      "main_category": "supplement"
+    },
+    {
+      "brand": "Ambervale",
+      "amount": 5043.04,
+      "pct_of_store": 5.7,
+      "main_category": "milk_powder"
+    },
+    {
+      "brand": "Vireo Labs",
+      "amount": 4478.79,
+      "pct_of_store": 5.1,
+      "main_category": "supplement"
+    }
+  ],
+  "milk_powder_brands": [
+    {
+      "brand": "Clearfield",
+      "amount": 7710.57,
+      "pct_of_category": 32.0
+    },
+    {
+      "brand": "Ambervale",
+      "amount": 5043.04,
+      "pct_of_category": 20.9
+    },
+    {
+      "brand": "Two Rivers",
+      "amount": 4402.21,
+      "pct_of_category": 18.3
+    },
+    {
+      "brand": "Highmoor",
+      "amount": 3074.22,
+      "pct_of_category": 12.8
+    },
+    {
+      "brand": "Fernvale",
+      "amount": 2819.35,
+      "pct_of_category": 11.7
+    },
+    {
+      "brand": "Westbrook",
+      "amount": 1031.34,
+      "pct_of_category": 4.3
+    }
+  ],
+  "functional_trend": [
+    {
+      "period": "2026-01",
+      "product_type": "calcium",
+      "qty": 72.0,
+      "amount": 2418.5,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-01",
+      "product_type": "coq10",
+      "qty": 64.0,
+      "amount": 2183.12,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-01",
+      "product_type": "eye_care",
+      "qty": 38.0,
+      "amount": 1157.46,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-01",
+      "product_type": "fish_oil",
+      "qty": 126.0,
+      "amount": 4194.93,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-01",
+      "product_type": "joint_care",
+      "qty": 100.0,
+      "amount": 3725.81,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-01",
+      "product_type": "lecithin",
+      "qty": 57.0,
+      "amount": 2214.55,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-01",
+      "product_type": "liver_support",
+      "qty": 82.0,
+      "amount": 2975.65,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-01",
+      "product_type": "magnesium",
+      "qty": 38.0,
+      "amount": 1470.08,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-01",
+      "product_type": "multivitamin",
+      "qty": 66.0,
+      "amount": 1824.59,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-01",
+      "product_type": "probiotic",
+      "qty": 61.0,
+      "amount": 2012.02,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-01",
+      "product_type": "propolis",
+      "qty": 50.0,
+      "amount": 1872.6,
+      "period_label": "Jan 2026"
+    }
+  ],
+  "pickup_tier_trend": [
+    {
+      "period": "2026-01",
+      "tier": "premium",
+      "amount": 2051.28,
+      "qty": 35.0,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-01",
+      "tier": "regular",
+      "amount": 9737.1,
+      "qty": 161.0,
+      "period_label": "Jan 2026"
+    }
+  ],
+  "channel_trend": [
+    {
+      "period": "2026-01",
+      "channel_group": "local",
+      "qty": 1100.0,
+      "amount": 34990.18,
+      "qty_pct": 46.5,
+      "period_label": "Jan 2026"
+    },
+    {
+      "period": "2026-01",
+      "channel_group": "export",
+      "qty": 1265.0,
+      "amount": 54322.26,
+      "qty_pct": 53.5,
+      "period_label": "Jan 2026"
+    }
+  ],
+  "sku_pareto": [
+    {
+      "decile": 1,
+      "decile_amount": 27411.59,
+      "cumulative_pct": 31.0
+    },
+    {
+      "decile": 2,
+      "decile_amount": 16411.34,
+      "cumulative_pct": 49.5
+    },
+    {
+      "decile": 3,
+      "decile_amount": 11776.71,
+      "cumulative_pct": 62.8
+    },
+    {
+      "decile": 4,
+      "decile_amount": 9252.66,
+      "cumulative_pct": 73.3
+    },
+    {
+      "decile": 5,
+      "decile_amount": 7208.97,
+      "cumulative_pct": 81.4
+    },
+    {
+      "decile": 6,
+      "decile_amount": 5524.59,
+      "cumulative_pct": 87.7
+    },
+    {
+      "decile": 7,
+      "decile_amount": 4304.7,
+      "cumulative_pct": 92.5
+    },
+    {
+      "decile": 8,
+      "decile_amount": 3395.37,
+      "cumulative_pct": 96.4
+    },
+    {
+      "decile": 9,
+      "decile_amount": 2218.07,
+      "cumulative_pct": 98.9
+    },
+    {
+      "decile": 10,
+      "decile_amount": 996.04,
+      "cumulative_pct": 100.0
+    }
+  ],
+  "operating_context": {
+    "foot_traffic": 268,
+    "miniprogram_leads": 94,
+    "miniprogram_completion_rate": 61.0,
+    "study_tour_flag": "no",
+    "study_tour_note": null,
+    "activity_description": "Summer bundle: 3 for 10% off across premium supplements"
+  },
+  "computed": {
+    "trend_periods": [
+      "2026-01"
+    ],
+    "trend_labels": [
+      "Jan 2026"
+    ],
+    "amount_totals": [
+      88500.04
+    ],
+    "amount_mom_pct": [],
+    "qty_totals": [
+      2371.0
+    ],
+    "qty_mom_pct": [],
+    "channel_periods": [
+      "2026-01"
+    ],
+    "channel_labels": [
+      "Jan 2026"
+    ],
+    "local_qty": [
+      1100.0
+    ],
+    "local_qty_mom_pct": [],
+    "export_qty": [
+      1265.0
+    ],
+    "export_qty_mom_pct": []
+  }
+}
