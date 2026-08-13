@@ -86,8 +86,7 @@ month costs the same as the first.
 40%. The database has no way to know that Chinese New Year ran 15–23 February and
 cross-border freight stops for about two weeks either side.
 
-**The person running it isn't technical.** Anything that needs a SQL file edited each
-month gets abandoned by month three.
+**The person running it isn't technical.
 
 ---
 
