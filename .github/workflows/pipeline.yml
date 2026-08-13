@@ -90,10 +90,24 @@ jobs:
         run: |
           python - <<'PY'
           import pandas as pd
+
           path = "data/reference/brand_categories.csv"
           df = pd.read_csv(path)
-          blank = df["confirmed_category"].astype(str).str.strip().isin(["", "nan"])
+          col = df["confirmed_category"]
+
+          # isna(), not a comparison against the string form of a missing value.
+          # An earlier version tested `astype(str).isin(["", "nan"])`, which
+          # worked under pandas 2 and matched nothing under pandas 3 — the
+          # answer was never written, and the failure surfaced three steps later
+          # as a NOT NULL violation in MySQL.
+          blank = col.isna() | col.fillna("").astype(str).str.strip().eq("")
+
           print("answering:", df.loc[blank, "brand_variants"].tolist())
+          if not blank.any():
+              raise SystemExit(
+                  "Nothing was blank, so the checkpoint above should not have "
+                  "fired. Check data/reference/brand_categories.csv.")
+
           df.loc[blank, "confirmed_category"] = "honey"
           df.to_csv(path, index=False)
           PY
